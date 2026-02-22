@@ -2,7 +2,6 @@
 import './App.css'
 import { DynamicToaster } from './DynamicToaster.jsx'
 import { Hello } from './Hello.jsx'
-import { ProductList } from './ProductList.jsx'
 import {UserProfile, CustomComponent} from './UserProfile.jsx'
 
 function App() {
@@ -24,20 +23,13 @@ function App() {
     <>
       <div>
         <h1> Hello world</h1>
-        {/* <UserProfile name="John Doe" age={30} email="john.doe@example.com" isActive={true} />
-        <UserProfile name="John Doe 2" age={40} email="john.doe@example.com" isActive={false} /> */}
-
-        <ProductList products={product} />
-
-
-
-
+        <UserProfile />
         {/* <CustomComponent />
         <Hello />   */}
         {/* <DynamicToaster  product={product[0]} />  
 
         {/* //company creation */}
-        {/* <DynamicToaster message="Company created successfully!" product={product[0]} label="Company close" temp="temp data" />  
+        <DynamicToaster message="Company created successfully!" product={product[0]} label="Company close" temp="temp data" />  
 
         <DynamicToaster message="Role created successfully!" />   */}
 

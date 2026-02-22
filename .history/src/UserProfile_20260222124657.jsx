@@ -2,13 +2,13 @@
 
 export const UserProfile = ({name, age, email, isActive}) => {
 
-    // let userStatus = null;
-    // if(isActive) {
-    //     userStatus = <h1>User Active</h1>
-    // } else {
-    //     userStatus = <h2>User Not Active</h2>
-    // }
-
+    let userStatus = null;
+    if(isActive) {
+        userStatus = <h1>User Active</h1>
+    } else {
+        userStatus = <h2>User Not Active</h2>
+    }
+    
     return (
         <div>
             <h1> User Profile </h1>
@@ -18,7 +18,7 @@ export const UserProfile = ({name, age, email, isActive}) => {
             <p>Status: {isActive ? "Active" : "Inactive"}</p>
 
             {
-                isActive && <h1>User Active</h1>
+                userStatus
             }
             
 
