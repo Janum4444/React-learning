@@ -1,5 +1,5 @@
-export const Button = ({ label, onClick, temp }) => {
+export const Button = ({ label, handleClick }) => {
     return (
-        <button onClick={onClick}>{label} {temp}</button>
+        <button onClick={() => handleClick('Button clicked! from child')}>{label}</button>
     )
 }
